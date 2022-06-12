@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>   
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__left">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill" style="width: 50px; height: 50px;"><path pid="0" d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"></path></svg>
+                    </a>
+                </div>
+                <div class="header__search">
+                    <div class="header__search-inputs">
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm">
+                    </div>
+                    <div class="header__search-calendar">
+                        <i class="far fa-calendar-minus"></i>
+                        <span>Ngày</span>
+                    </div>
+                    <div class="header__search-guest">
+                        <i class="fas fa-user header__search-guest-icon"></i>
+                        <span class="header__search-guest-text">Số khách</span>
+                        <div class="guest__option">
+                            <div class="guest__option-item">
+                                <div class="guest__option-info">
+                                    <h1>Người lớn</h1>
+                                </div>
+                                <div class="guest__option-minus disabled">
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                                <span>0</span>
+                                <div class="guest__option-plus">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="guest__option-item">
+                                <div class="guest__option-info">
+                                    <h1>Trẻ em</h1>
+                                    <p>Tuổi từ 2–12</p>
+                                </div>
+                                <div class="guest__option-minus disabled">
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                                <span>0</span>
+                                <div class="guest__option-plus">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="guest__option-item">
+                                <div class="guest__option-info">
+                                    <h1>Trẻ sơ sinh</h1>
+                                    <p>Dưới 2 tuổi</p>
+                                </div>
+                                <div class="guest__option-minus disabled">
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                                <span>0</span>
+                                <div class="guest__option-plus">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="guest__option-footer">
+                                <span>Xóa</span>
+                                <span>Áp dụng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__search-btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">Guide</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">Host</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">Đăng ký</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">Đăng nhập</a>
+                    </li>
+                    <div class="header__nav-item">
+                        <img src="https://www.luxstay.com/icons/vi.svg" alt="">
+                        <span>VND</span>
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div class="grid wide">
+            <div class="container">
+                 <!-- Slider main container -->
+                <section class="swiper show">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide">    
+                            <img src="https://beta-api.luxstay.net/api/upload/file?storage=admins/12/qF7ukmI--Rwr2H5LwzVZwcXa.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://beta-api.luxstay.net/api/upload/file?storage=admins/12/Vt9XtXZykcTYNAqCRKOynxWx.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+            
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </section>
+                   
+               <!-- Welcome to Luxstay -->
+               <section class="foreword show">
+                   <h1>Chào mừng đến với Luxstay</h1>
+                   <p>Đặt chỗ ở, homestay, cho thuê xe, trải nghiệm và nhiều hơn nữa trên Luxstay</p>
+                   <p>
+                       <a href="#">Đăng nhập</a> 
+                       hoặc
+                       <a href="#">Đăng kí</a>
+                       để trải nghiệm !
+                    </p>
+               </section>  
+               <!-- Địa điểm nổi bật -->
+               <section class="proLocation show">
+                   <h1>Địa điểm nổi bật</h1>
+                   <p>Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn</p>
+                    <div class="list__wrapper">
+                        <div class="proLocation-list">
+                            <div class="proLocation-item">
+                                <a href="#">        
+                                    <img src="https://cdn.luxstay.com/home/location/location_10_1559303118.png" alt="">
+                                    <h2>Vũng Tàu</h2>
+                                    <span>539 Chỗ ở</span> 
+                                </a>
+                            </div>
+                            <div class="proLocation-item">
+                                <a href="#">        
+                                    <img src="https://cdn.luxstay.com/home/location/location_5_1559735011.png" alt="">
+                                    <h2>Hồ Chí Minh</h2>
+                                    <span>2271 Chỗ ở</span> 
+                                </a>
+                            </div>
+                            <div class="proLocation-item">
+                                <a href="#">        
+                                    <img src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="">
+                                    <h2>Hà Nội</h2>
+                                    <span>2720 Chỗ ở</span> 
+                                </a>
+                            </div>
+                            <div class="proLocation-item">
+                                <a href="#">        
+                                    <img src="https://cdn.luxstay.com/home/location/location_4_1559786177.png" alt="">
+                                    <h2>Đà Lạt</h2>
+                                    <span>539 Chỗ ở</span> 
+                                </a>
+                            </div>
+                            <div class="proLocation-item">
+                                <a href="#">        
+                                    <img src="https://cdn.luxstay.com/home/location/location_16_1559303173.png" alt="">
+                                    <h2>Đà Nẵng</h2>
+                                    <span>898 Chỗ ở</span> 
+                                </a>
+                            </div>
+                            <div class="proLocation-item">
+                                <a href="#">        
+                                    <img src="https://cdn.luxstay.com/home/location/location_1_1559373089.png" alt="">
+                                    <h2>Nha Trang</h2>
+                                    <span>221 Chỗ ở</span> 
+                                </a>
+                            </div>    
+                            <div class="proLocation-item">
+                                <a href="#">        
+                                    <img src="https://cdn.luxstay.com/home/location/location_5_1559786196.png" alt="">
+                                    <h2>Quảng Ninh</h2>
+                                    <span>123 Chỗ ở</span> 
+                                </a>
+                            </div> 
+                            <div class="proLocation-item">
+                                <a href="#">        
+                                    <img src="https://cdn.luxstay.com/home/location/location_6_1559786202.png" alt="">
+                                    <h2>Hội An</h2>
+                                    <span>323 Chỗ ở</span> 
+                                </a>
+                            </div>            
+                    </div>      
+                    </div>
+                    <div class="prev"> 
+                        <i class="ti-angle-left"></i>
+                    </div>
+                    <div class="next">
+                        <i class="ti-angle-right"></i>
+                    </div>               
+               </section>
+               <!-- Ưu đãi độc quyền -->
+               <section class="exclusive">
+                   <h1>Ưu đãi độc quyền</h1>
+                   <p>Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!</p>
+                   <div class="exclusive-list">
+                       <div class="exclusive-item">
+                           <a href="#">
+                               <img src="https://cdn.luxstay.com/home/event/event_1_1633051905.jpg" alt="">
+                           </a>
+                       </div>
+                       <div class="exclusive-item">
+                           <a href="#">
+                               <img src="https://cdn.luxstay.com/home/event/event_1_1614658965.jpg" alt="">
+                           </a>
+                       </div>
+                       <div class="exclusive-item">
+                           <a href="#">
+                               <img src="https://cdn.luxstay.com/home/event/event_1_1596604498.jpg" alt="">
+                           </a>
+                       </div>
+                   </div>
+               </section>
+               <!-- Gợi ý từ Luxstay -->
+               <section class="suggest">
+                   <h1>Gợi ý từ Luxstay</h1>
+                   <p>Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn</p>
+                   <div class="list__wrapper">
+                        <div class="suggest-list">
+                            <div class="suggest-item">
+                                <a href="#">
+                                    <img src="https://cdn.luxstay.com/users/244375/55QhpLRYZ0J2RgWA7IT3C6ak.jpg" alt="">
+                                    <h3>VI VU NGOẠI THÀNH HÀ NỘI</h3>
+                                    <p>Trải nghiệm không gian thoáng đãng cho chuyến đi ngay gần Hà Nội</p>
+                                </a>
+                            </div>
+                            <div class="suggest-item">
+                                <a href="#">
+                                    <img src="https://cdn.luxstay.com/users/105556/vmD0XuqTMCkJROiw7jYq_d7V.png" alt="">
+                                    <h3>VŨNG TÀU BIỆT THỰ HỒ BƠI</h3>
+                                    <p>Những căn biệt thự có hồ bơi dành cho kì nghỉ của bạn tại Vũng Tàu</p>
+                                </a>
+                            </div>
+                            <div class="suggest-item">
+                                <a href="#">
+                                    <img src="https://cdn.luxstay.com/rooms/41062/large/room_41062_1_1576585450.jpg" alt="">
+                                    <h3>HÀ NỘI NỘI THÀNH LÃNG MẠN</h3>
+                                    <p>không gian lãng mạn dành cho các cặp đôi tại trung tâm Hà Nội</p>
+                                </a>
+                            </div>
+                            <div class="suggest-item">
+                                <a href="#">
+                                    <img src="https://cdn.luxstay.com/rooms/23202/large/508C6843-54D6-4CAC-BB0F-0E748E3E49D0.jpg" alt="">
+                                    <h3>SÀI GÒN CẦN LÀ CÓ NGAY</h3>
+                                    <p>Những căn hộ homestay có 01 phòng ngủ tại Sài Gòn có thể đặt nhanh chóng</p>
+                                </a>
+                            </div>
+                            <div class="suggest-item">
+                                <a href="#">
+                                    <img src="https://cdn.luxstay.com/rooms/23202/large/508C6843-54D6-4CAC-BB0F-0E748E3E49D0.jpg" alt="">
+                                    <h3>SÀI GÒN CẦN LÀ CÓ NGAY</h3>
+                                    <p>Những căn hộ homestay có 01 phòng ngủ tại Sài Gòn có thể đặt nhanh chóng</p>
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="prev"> 
+                        <i class="ti-angle-left"></i>
+                    </div>
+                    <div class="next">
+                        <i class="ti-angle-right"></i>
+                    </div>   
+               </section>
+               <!-- Gợi ý khám phá -->
+               <section class="discovery">
+                   <h1>Gợi ý khám phá</h1>
+                   <p>Để mỗi chuyến đi là một hành trình truyền cảm hứng, mỗi căn phòng là một khoảng trời an yên</p>
+                   <div class="discovery-list">
+                       <div class="discovery-item">
+                           <a href="">
+                               <img src="https://travel.luxstay.com/wp-content/uploads/2021/09/1630580100_973_Visit-5-homestays-in-Vung-Tau-that-are-extremely-chill.jpg" alt="">
+                               <h3 class="discovery-item-title">Du lịch Đà Lạt nhất định phải ghé thăm những địa điểm này</h3>
+                               <div class="discovery-item-info">THÔNG TIN HOMESTAY</div>
+                           </a> 
+                       </div>
+                       <div class="discovery-item">
+                           <a href="">
+                               <img src="https://travel.luxstay.com/wp-content/uploads/2021/07/1626070234_158_5-homestays-in-Da-Lat-with-beautiful-design-House-Addiction.jpg" alt="">
+                               <h3 class="discovery-item-title">Du lịch Đà Lạt nhất định phải ghé thăm những địa điểm này</h3>
+                               <div class="discovery-item-info">THÔNG TIN HOMESTAY</div>
+                           </a> 
+                       </div>
+                       <div class="discovery-item">
+                           <a href="">
+                               <img src="https://travel.luxstay.com/wp-content/uploads/2021/07/5-homestays-in-Hanoi-can-make-you-say-oh-cloud.jpg" alt="">
+                               <h3 class="discovery-item-title">Du lịch Đà Lạt nhất định phải ghé thăm những địa điểm này</h3>
+                               <div class="discovery-item-info">THÔNG TIN HOMESTAY</div>
+                           </a> 
+                       </div>
+                   </div>
+               </section>
+               <!-- Hướng dẫn sử dụng -->
+               <section class="guide">
+                   <h1>Hướng dẫn sử dụng</h1>
+                   <p>
+                    Đặt chỗ nhanh, thanh toán đơn giản, sử dụng dễ dàng
+                   </p>
+                   <div class="guide-list">
+                       <div class="guide-item">
+                           <a href="#">
+                               <img src="data:image/jpeg;base64,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" alt="">
+                           </a>
+                       </div>
+                       <div class="guide-item">
+                           <a href="#">
+                               <img src="data:image/jpeg;base64,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" alt="">
+                           </a>
+                       </div>
+                       <div class="guide-item">
+                           <a href="#">
+                               <img src="data:image/jpeg;base64,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" alt="">
+                           </a>
+                       </div>
+                   </div>
+               </section>
+               <!--  -->
+               <section class="introdution">
+                   <div class="introdution__about">
+                        <div class="introdution__about-logo">
+                            <svg version="1.1" viewBox="0 0 244 50" class="mb--18 mb--sm-42 app-introduce__logo svg-icon svg-fill"><path pid="0" d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67zm45.839 2.652l-12.45-.05.096-21.789a.957.957 0 00-.965-.945l-.678-.003a.96.96 0 00-.974.939v.047c-.048.095-.05.236-.05.33l-.098 22.636a1.337 1.337 0 001.351 1.326l13.805.056a.958.958 0 00.973-.938l.003-.662a1.037 1.037 0 00-1.013-.946v-.001zm27.64-22.67l-.871-.003c-.563-.003-1.027.42-1.027.937l-.075 15.878c-.014 3.157-3.252 5.735-7.197 5.72-3.943-.014-7.158-2.618-7.144-5.775l.123-15.5.052-.282a.957.957 0 00-.201-.756 1.128 1.128 0 00-.767-.332l-.87-.004c-.513-.002-.924.326-1.028.75a.857.857 0 00-.156.47l-.073 15.69c-.02 4.616 4.47 8.402 9.95 8.424 5.48.022 10.004-3.73 10.025-8.3l.122-15.5.054-.282a.952.952 0 00-.203-.755c-.152-.189-.458-.379-.714-.38zm48.638 11.226c-3.275-1.249-6.696-2.496-6.688-4.393.01-2.42 2.721-4.401 6.05-4.387 3.331.014 6.025 2.017 6.014 4.436l-.002.38a.96.96 0 00.961.953l.675.003a.96.96 0 00.971-.945v-.38c.009-1.66-.709-3.276-2.006-4.515-1.635-1.618-4.092-2.532-6.65-2.494-4.873-.02-8.698 3.047-8.715 6.938.03 3.748 4.416 5.38 8.656 6.962 3.324 1.247 6.795 2.495 6.785 4.487-.01 2.372-3.155 4.399-6.775 4.385-3.668-.016-6.747-2.07-6.737-4.44l.001-.38a.961.961 0 00-.96-.954l-.676-.002a.96.96 0 00-.97.945v.38c-.018 3.843 4.215 6.991 9.38 7.012 5.163.022 9.423-3.092 9.44-6.934-.033-3.796-4.464-5.427-8.754-7.057zM193.66 11.84l-18.844-.076c-.547-.003-.996.42-.999.94l-.002.66c-.002.52.443.946.99.949l8.103.032-.095 21.802c-.003.52.443.947.99.949l.696.002c.546.003.996-.42 1-.94l.095-21.802 8.055.031c.547.003.996-.42.999-.94l.003-.66c.003-.52-.443-.946-.99-.947zm49.264.515c-.144-.33-.481-.52-.867-.52l-.87-.005a.963.963 0 00-.677.28l-.145.14-.147.142-6.609 9.677-6.72-9.734c-.048-.046-.096-.094-.096-.14l-.143-.143a.97.97 0 00-.675-.285l-.774-.003a1.021 1.021 0 00-.872.515 1.03 1.03 0 00.045.988l7.966 11.576-.049 11.307c.006.527.437.95.964.946l.675.002a.957.957 0 00.97-.937l.049-11.308 7.923-11.509c.194-.329.243-.705.052-.989zm-37.898 12.047l3.75-7.994 3.728 8.023-7.478-.03zm15.615 10.954v-.047l-10.5-22.733c-.15-.425-.549-.71-1.102-.807-.603-.049-1.156.231-1.41.703v.046l-10.705 22.697v.047l-.204.471c-.095.283-.06.595.097.849.188.258.483.416.802.428l.854.004c.453.001.806-.282.958-.657l.05-.141 4.314-9.277 9.95.04 4.28 9.31.049.14c.15.38.5.664.952.667l.854.002c.352.002.654-.139.806-.422.152-.281.254-.563.104-.847l-.149-.473zm-86.008-15.15l.817.003a.963.963 0 00.729-.347l4.755-6.218.412-.478a.763.763 0 00.095-.915c-.135-.306-.453-.482-.816-.483l-.863-.004a.929.929 0 00-.868.608l-4.983 6.522a.94.94 0 00-.096.915c.135.22.453.394.816.397h.002zm-6.998 8.45l-.819-.002a.96.96 0 00-.728.347l-4.755 6.207-.413.48a.77.77 0 00-.094.92c.135.309.452.485.816.488l.864.002a.91.91 0 00.82-.478l5.03-6.601a.949.949 0 00.095-.92 1.027 1.027 0 00-.816-.443zm8.019-.453l.148.14 5.55 7.248c.248.284.246.662.095.99-.15.332-.5.519-.9.517l-.896-.004a1.013 1.013 0 01-.697-.286l-.149-.14c-.03-.002-.042-.02-.059-.044a.212.212 0 00-.04-.052l-5.501-7.151a1.005 1.005 0 01-.15-.237l-11.694-15.39-.446-.521c-.248-.285-.246-.662-.096-.993.15-.33.501-.518.9-.516l.897.004a.99.99 0 01.845.428l.15.19 11.992 15.721s.05.048.05.096z"></path></svg>
+                        </div>
+                        <h1>TÌM KIẾM CHỖ Ở GIÁ TỐT NHẤT</h1>
+                        <p>Luxstay hiện là nền tảng đặt phòng trực tuyến #1 Việt Nam. Đồng hành cùng chúng tôi, bạn có những chuyến đi mang đầy trải 
+                            nghiệm. Với Luxstay, việc đặt chỗ ở, biệt thự nghỉ dưỡng, khách sạn, nhà riêng, chung cư... trở nên nhanh chóng, thuận 
+                            tiện và dễ dàng.
+                        </p>
+                        <div class="introdution__about-action">
+                            <div class="introdution__about-qr">
+                                <img src="https://www.luxstay.com/qr-code.png" alt="">
+                            </div>
+                            <div class="introdution__about-app">
+                                    <a href="#">
+                                        <img src="https://www.luxstay.com/icons/apple-store.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="https://www.luxstay.com/icons/huawei.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="https://www.luxstay.com/icons/google-play.svg" alt="">
+                                    </a>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="introdution__img">
+                        <img src="https://www.luxstay.com/home/home-02.png" alt="">
+                   </div>
+               </section>
+               <a href="#" class="phone">
+                   <div class="phone__wrapper"></div>
+                   <div class="phone__inner"></div>
+                   <i class="fas fa-phone"></i>
+               </a>
+            </div>
+            <footer class="footer">
+                <div class="footer__top">
+                    <div class="footer__top-contact">
+                        <svg version="1.1" viewBox="0 0 244 50" class="mb--18 mb--sm-42 app-introduce__logo svg-icon svg-fill"><path pid="0" d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67zm45.839 2.652l-12.45-.05.096-21.789a.957.957 0 00-.965-.945l-.678-.003a.96.96 0 00-.974.939v.047c-.048.095-.05.236-.05.33l-.098 22.636a1.337 1.337 0 001.351 1.326l13.805.056a.958.958 0 00.973-.938l.003-.662a1.037 1.037 0 00-1.013-.946v-.001zm27.64-22.67l-.871-.003c-.563-.003-1.027.42-1.027.937l-.075 15.878c-.014 3.157-3.252 5.735-7.197 5.72-3.943-.014-7.158-2.618-7.144-5.775l.123-15.5.052-.282a.957.957 0 00-.201-.756 1.128 1.128 0 00-.767-.332l-.87-.004c-.513-.002-.924.326-1.028.75a.857.857 0 00-.156.47l-.073 15.69c-.02 4.616 4.47 8.402 9.95 8.424 5.48.022 10.004-3.73 10.025-8.3l.122-15.5.054-.282a.952.952 0 00-.203-.755c-.152-.189-.458-.379-.714-.38zm48.638 11.226c-3.275-1.249-6.696-2.496-6.688-4.393.01-2.42 2.721-4.401 6.05-4.387 3.331.014 6.025 2.017 6.014 4.436l-.002.38a.96.96 0 00.961.953l.675.003a.96.96 0 00.971-.945v-.38c.009-1.66-.709-3.276-2.006-4.515-1.635-1.618-4.092-2.532-6.65-2.494-4.873-.02-8.698 3.047-8.715 6.938.03 3.748 4.416 5.38 8.656 6.962 3.324 1.247 6.795 2.495 6.785 4.487-.01 2.372-3.155 4.399-6.775 4.385-3.668-.016-6.747-2.07-6.737-4.44l.001-.38a.961.961 0 00-.96-.954l-.676-.002a.96.96 0 00-.97.945v.38c-.018 3.843 4.215 6.991 9.38 7.012 5.163.022 9.423-3.092 9.44-6.934-.033-3.796-4.464-5.427-8.754-7.057zM193.66 11.84l-18.844-.076c-.547-.003-.996.42-.999.94l-.002.66c-.002.52.443.946.99.949l8.103.032-.095 21.802c-.003.52.443.947.99.949l.696.002c.546.003.996-.42 1-.94l.095-21.802 8.055.031c.547.003.996-.42.999-.94l.003-.66c.003-.52-.443-.946-.99-.947zm49.264.515c-.144-.33-.481-.52-.867-.52l-.87-.005a.963.963 0 00-.677.28l-.145.14-.147.142-6.609 9.677-6.72-9.734c-.048-.046-.096-.094-.096-.14l-.143-.143a.97.97 0 00-.675-.285l-.774-.003a1.021 1.021 0 00-.872.515 1.03 1.03 0 00.045.988l7.966 11.576-.049 11.307c.006.527.437.95.964.946l.675.002a.957.957 0 00.97-.937l.049-11.308 7.923-11.509c.194-.329.243-.705.052-.989zm-37.898 12.047l3.75-7.994 3.728 8.023-7.478-.03zm15.615 10.954v-.047l-10.5-22.733c-.15-.425-.549-.71-1.102-.807-.603-.049-1.156.231-1.41.703v.046l-10.705 22.697v.047l-.204.471c-.095.283-.06.595.097.849.188.258.483.416.802.428l.854.004c.453.001.806-.282.958-.657l.05-.141 4.314-9.277 9.95.04 4.28 9.31.049.14c.15.38.5.664.952.667l.854.002c.352.002.654-.139.806-.422.152-.281.254-.563.104-.847l-.149-.473zm-86.008-15.15l.817.003a.963.963 0 00.729-.347l4.755-6.218.412-.478a.763.763 0 00.095-.915c-.135-.306-.453-.482-.816-.483l-.863-.004a.929.929 0 00-.868.608l-4.983 6.522a.94.94 0 00-.096.915c.135.22.453.394.816.397h.002zm-6.998 8.45l-.819-.002a.96.96 0 00-.728.347l-4.755 6.207-.413.48a.77.77 0 00-.094.92c.135.309.452.485.816.488l.864.002a.91.91 0 00.82-.478l5.03-6.601a.949.949 0 00.095-.92 1.027 1.027 0 00-.816-.443zm8.019-.453l.148.14 5.55 7.248c.248.284.246.662.095.99-.15.332-.5.519-.9.517l-.896-.004a1.013 1.013 0 01-.697-.286l-.149-.14c-.03-.002-.042-.02-.059-.044a.212.212 0 00-.04-.052l-5.501-7.151a1.005 1.005 0 01-.15-.237l-11.694-15.39-.446-.521c-.248-.285-.246-.662-.096-.993.15-.33.501-.518.9-.516l.897.004a.99.99 0 01.845.428l.15.19 11.992 15.721s.05.048.05.096z"></path></svg>
+                        <div class="footer__top-messenger">
+                            <svg version="1.1" viewBox="0 0 40 40" class="svg-icon svg-fill" style="width: 40px; height: 40px;"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="svgicon_whatsapp_b"><stop stop-color="#4B4B4B" offset="0%"></stop><stop offset="100%"></stop></linearGradient><linearGradient x1="0%" y1="25.77%" x2="100%" y2="74.23%" id="svgicon_whatsapp_e"><stop stop-color="#C77D0E" offset="0%"></stop><stop stop-color="#F98713" offset="100%"></stop></linearGradient><linearGradient x1="0%" y1="24.995%" x2="100%" y2="75.005%" id="svgicon_whatsapp_f"><stop stop-color="#F98713" offset="0%"></stop><stop stop-color="#FBAC36" offset="100%"></stop></linearGradient><path pid="0" d="M9.083 17.431L3.52 20.16H1.76l1.4-5.483C1.182 13.132 0 11.172 0 9.04 0 4.047 6.483 0 14.48 0c7.997 0 14.48 4.047 14.48 9.04 0 4.993-6.483 9.04-14.48 9.04-1.908 0-3.73-.23-5.397-.649z" id="svgicon_whatsapp_a"></path><path pid="1" d="M9.083 17.431L3.52 20.16H1.76l1.4-5.483C1.182 13.132 0 11.172 0 9.04 0 4.047 6.483 0 14.48 0c7.997 0 14.48 4.047 14.48 9.04 0 4.993-6.483 9.04-14.48 9.04-1.908 0-3.73-.23-5.397-.649z" id="svgicon_whatsapp_d"></path></defs><g fill="none" fill-rule="evenodd"><circle pid="2" fill-opacity=".03" fill="#000" cx="20" cy="20" r="20"></circle><ellipse pid="3" fill="#E4E4E4" cx="20" cy="36.64" rx="20" ry="1.28"></ellipse><g transform="translate(0 4)"><mask id="svgicon_whatsapp_c" fill="#fff"><use xlink:href="#svgicon_whatsapp_a"></use></mask><use fill="url(#svgicon_whatsapp_b)" xlink:href="#svgicon_whatsapp_a"></use><path pid="4" d="M10.843 17.431L5.28 20.16H3.52l1.4-5.483c-1.978-1.545-3.16-3.505-3.16-5.637C1.76 4.047 8.243 0 16.24 0c7.997 0 14.48 4.047 14.48 9.04 0 4.993-6.483 9.04-14.48 9.04-1.908 0-3.73-.23-5.397-.649z" fill="#414141" mask="url(#svgicon_whatsapp_c)"></path><circle pid="5" fill="#FFF" opacity=".2" mask="url(#svgicon_whatsapp_c)" cx="9.6" cy="8.48" r="1.6"></circle><circle pid="6" fill="#FFF" opacity=".2" mask="url(#svgicon_whatsapp_c)" cx="14.72" cy="8.48" r="1.6"></circle><circle pid="7" fill="#FFF" opacity=".2" mask="url(#svgicon_whatsapp_c)" cx="19.84" cy="8.48" r="1.6"></circle></g><g transform="matrix(-1 0 0 1 40 16)"><mask id="svgicon_whatsapp_g" fill="#fff"><use xlink:href="#svgicon_whatsapp_d"></use></mask><use fill="url(#svgicon_whatsapp_e)" xlink:href="#svgicon_whatsapp_d"></use><path pid="8" d="M7.808 17.112L1.6 20.16H-.16l1.759-6.03C-.21 12.622-1.28 10.75-1.28 8.72c0-4.993 6.483-9.04 14.48-9.04 7.997 0 14.48 4.047 14.48 9.04 0 4.993-6.483 9.04-14.48 9.04-1.906 0-3.725-.23-5.392-.648z" fill="url(#svgicon_whatsapp_f)" mask="url(#svgicon_whatsapp_g)"></path><circle pid="9" fill="#CF3B00" opacity=".413" mask="url(#svgicon_whatsapp_g)" cx="8.64" cy="8.48" r="1.6"></circle><circle pid="10" fill="#CF3B00" opacity=".413" mask="url(#svgicon_whatsapp_g)" cx="13.76" cy="8.48" r="1.6"></circle><circle pid="11" fill="#CF3B00" opacity=".413" mask="url(#svgicon_whatsapp_g)" cx="18.88" cy="8.48" r="1.6"></circle></g></g></svg>
+                             <div>
+                                 <h2>Messenger</h2>
+                                 <a href="#">http://m.me/luxstay</a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="footer__top-favourite">
+                        <h1>TOP HOMESTAY ĐƯỢC YÊU THÍCH</h1>
+                        <a href="#">Homestay Đà Lạt</a>
+                        <a href="#">Homestay Hồ Chí Minh</a>
+                        <a href="#">Homestay Đà Nẵng</a>
+                        <a href="#">Homestay Hội An</a>
+                        <a href="#">Homestay Sâp</a>
+                    </div>
+                    <div class="footer__top-like">
+                        <h1>KHÔNG GIAN ƯA THÍCH</h1>
+                        <a href="#">Căn hộ dịch vụ</a>
+                        <a href="#">Biệt thự</a>
+                        <a href="#">Nhà riêng</a>
+                        <a href="#">Studio</a>
+                        <a href="#">Travel Guide</a>
+                    </div>
+                    <div class="footer__top-about">
+                        <h1>VỀ CHÚNG TÔI</h1>
+                        <a href="#">Blog</a>
+                        <a href="#">Điều khoản hoạt động</a>
+                        <a href="#">1800 6586</a>
+                        <a href="#">+84 8898 66666</a>
+                        <a href="#">info@luxstay.com</a>
+                        <a href="#">Trang thông tin dành cho chủ nhà</a>
+                    </div>
+                    <div class="footer__top-download">
+                        <img src="https://www.luxstay.com/qr-code.png" alt="">
+                        <div class="footer__top-download-app">
+                            <a href="#">
+                                <img src="https://www.luxstay.com/icons/apple-store.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="https://www.luxstay.com/icons/huawei.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="https://www.luxstay.com/icons/google-play.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./app.js">
+    </script>
+</body>
+</html>
